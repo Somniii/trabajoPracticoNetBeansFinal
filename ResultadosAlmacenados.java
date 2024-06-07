@@ -9,7 +9,7 @@ package seahub.proyectoprogramacionseahub;
  * @author ianel
  */
 public class ResultadosAlmacenados {
-    private Resultados[] resultados;
+    private Torneo[] torneo;
     private int torneosGanados;
     private double posicionPromedio;
     private double tiempoPromedio;
@@ -19,8 +19,8 @@ public class ResultadosAlmacenados {
     public ResultadosAlmacenados() {
     }
 
-    public ResultadosAlmacenados(Resultados[] resultados, int torneosGanados, double posicionPromedio, double tiempoPromedio, String[] listaTorneosParticipados, int cantidadTorneosParticipados) {
-        this.resultados = resultados;
+    public ResultadosAlmacenados(Torneo[] resultados, int torneosGanados, double posicionPromedio, double tiempoPromedio, String[] listaTorneosParticipados, int cantidadTorneosParticipados) {
+        this.torneo = resultados;
         this.torneosGanados = torneosGanados;
         this.posicionPromedio = posicionPromedio;
         this.tiempoPromedio = tiempoPromedio;
@@ -28,13 +28,15 @@ public class ResultadosAlmacenados {
         this.cantidadTorneosParticipados = cantidadTorneosParticipados;
     }
 
-    public Resultados[] getResultados() {
-        return resultados;
+    public Torneo[] getTorneo() {
+        return torneo;
     }
 
-    public void setResultados(Resultados[] resultados) {
-        this.resultados = resultados;
+    public void setTorneo(Torneo[] torneo) {
+        this.torneo = torneo;
     }
+
+
 
     public int getTorneosGanados() {
         return torneosGanados;
