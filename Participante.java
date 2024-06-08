@@ -22,8 +22,8 @@ public class Participante extends Persona implements Email{
         this.metrica = metrica;
     }
 
-    public Participante(Torneo[] torneosActuales, boolean estaVetado, ArrayListResultadosTorneos metrica, String nombre, String apellido, String email, int dni, int idPersona) {
-        super(nombre, apellido, email, dni, idPersona);
+    public Participante(Torneo[] torneosActuales, boolean estaVetado, ArrayListResultadosTorneos metrica, String nombre, String apellido, String email, int dni, int idPersona,String usuario , String contraseña) {
+        super(nombre, apellido, email, dni, idPersona , usuario , contraseña);
         this.torneosActuales = torneosActuales;
         this.estaVetado = estaVetado;
         this.metrica = metrica;
