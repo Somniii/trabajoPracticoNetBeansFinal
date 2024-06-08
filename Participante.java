@@ -11,18 +11,18 @@ package seahub.proyectoprogramacionseahub;
 public class Participante extends Persona implements Email{
     private Torneo[] torneosActuales;
     private boolean estaVetado;
-    private ResultadosAlmacenados metrica;
+    private ArrayListResultadosTorneos metrica;
 
     public Participante() {
     }
 
-    public Participante(Torneo[] torneosActuales, boolean estaVetado, ResultadosAlmacenados metrica) {
+    public Participante(Torneo[] torneosActuales, boolean estaVetado, ArrayListResultadosTorneos metrica) {
         this.torneosActuales = torneosActuales;
         this.estaVetado = estaVetado;
         this.metrica = metrica;
     }
 
-    public Participante(Torneo[] torneosActuales, boolean estaVetado, ResultadosAlmacenados metrica, String nombre, String apellido, String email, int dni, int idPersona) {
+    public Participante(Torneo[] torneosActuales, boolean estaVetado, ArrayListResultadosTorneos metrica, String nombre, String apellido, String email, int dni, int idPersona) {
         super(nombre, apellido, email, dni, idPersona);
         this.torneosActuales = torneosActuales;
         this.estaVetado = estaVetado;
@@ -45,11 +45,11 @@ public class Participante extends Persona implements Email{
         this.estaVetado = estaVetado;
     }
 
-    public ResultadosAlmacenados getMetrica() {
+    public ArrayListResultadosTorneos getMetrica() {
         return metrica;
     }
 
-    public void setMetrica(ResultadosAlmacenados metrica) {
+    public void setMetrica(ArrayListResultadosTorneos metrica) {
         this.metrica = metrica;
     }
     
